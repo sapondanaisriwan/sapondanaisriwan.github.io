@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
 
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,34 +27,108 @@
       <div id="logo-page">
         <a href="#">My Portfolio</a>
       </div>
-
       <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
   </head>
   <body>
-    <section id="home">
-      <div id="greeting">
-        <h1 class="greeting-h1">Hello Kuy rai sas</h1>
-        <p class="greeting-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          asperiores dolorem consequatur necessitatibus explicabo totam incidunt
-          modi rerum nulla excepturi? At tempore veritatis ab rerum, quo beatae
-          autem ducimus earum.
-        </p>
-      </div>
-    </section>
+    <main>
+      <section id="home">
+        <div id="greeting">
+          <h1 class="greeting-h1">Hey there, I'm Sapondanai Sriwan</h1>
+          <p class="greeting-p">
+            I'm just <b>an average high school student</b> who enjoy programming
+            and creating projects that I find interesting.
+          </p>
+        </div>
+        <div class="social-media">
+          <!-- target = _blank -> เป็นการเปิดหน้าใหม่ -->
+          <a
+            href="https://twitter.com/Adashimaa"
+            target="_blank"
+            class="twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/sapondanai.sriwan"
+            target="_blank"
+            class="facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/i_am_softt/"
+            target="_blank"
+            class="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/sapondanaisriwan"
+            target="_blank"
+            class="github"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:sapondanaisriwan@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </section>
+      <section id="about">
+        <div class="intersting-container">
+          <div>
+            <h2>My Interest</h2>
+          </div>
+          <div class="interesting-row">
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Anime</h3>
+              </div>
+            </div>
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Music</h3>
+              </div>
+            </div>
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Gaming</h3>
+              </div>
+            </div>
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Manga</h3>
+              </div>
+            </div>
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Light novel</h3>
+              </div>
+            </div>
+            <div class="my-interesting">
+              <div class="contents">
+                <h3>Hentai</h3>
+              </div>
+            </div>
+          </div>
+          <div class="certificate">
+            
+          </div>
+        </div>
+      </section>
+      <section id="education"></section>
+      <section id="projects"></section>
+      <section id="contact-me"></section>
+      <footer>
+        <div class="footer-credit">
+          <span class="licence">© 2023</span>
+          <span class="dot">•</span>
+          <span class="author">Sapondanai Sriwan</span>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
