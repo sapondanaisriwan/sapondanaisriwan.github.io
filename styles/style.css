@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -27,9 +28,17 @@ body {
   background-color: var(--background-b);
 }
 
-a {
-  text-decoration: none;
-}
+/* body::before {
+  content: "";
+  position: fixed;
+  background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+} */
 
 section {
   width: 100%;
@@ -117,21 +126,29 @@ section {
   background-color: rgba(28, 28, 38, 0.6);
 }
 
+.about-me img {
+  width: 400px;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .interesting-row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1.2rem;
-  column-gap: 1.2rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .my-interesting {
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 
   display: flex;
   align-items: center;
+  width: 400px;
+  margin: 0.8rem;
   /* width: 100%;
   max-width: 410px; */
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
 
   background-color: var(--background-c);
   transition: ease-in-out 0.3s;
@@ -142,6 +159,14 @@ section {
 }
 .my-interesting:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.certificate {
+  display: block;
+}
+
+.certificate h2 {
+  text-transform: uppercase;
 }
 
 /* FOOTER */
