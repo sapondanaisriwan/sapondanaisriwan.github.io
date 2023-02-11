@@ -1,160 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Sapondanai Sriwan</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
 
-    <!-- font-awesome -->
+    <!-- import css -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <title>Portfolio</title>
-    <nav id="navbar">
-      <div id="logo-page">
-        <a href="#">My Portfolio</a>
-      </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
   </head>
   <body>
-    <main>
-      <section id="home">
-        <div id="greeting">
-          <h1 class="greeting-h1">Hey there, I'm Sapondanai Sriwan</h1>
-          <p class="greeting-p">
-            I'm just <b>an average high school student</b> who enjoy programming
-            and creating projects that I find interesting.
-          </p>
-        </div>
-        <div class="social-media">
-          <!-- target = _blank -> เป็นการเปิดหน้าใหม่ -->
-          <a
-            href="https://twitter.com/Adashimaa"
-            target="_blank"
-            class="twitter"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/sapondanai.sriwan"
-            target="_blank"
-            class="facebook"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/i_am_softt/"
-            target="_blank"
-            class="instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://github.com/sapondanaisriwan"
-            target="_blank"
-            class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="mailto:sapondanaisriwan@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </div>
-      </section>
-      <section id="about">
-        <div class="about-me">
-          <img
-            src="http://istudent.samakkhi.ac.th/istudent/assets/images_student/43905.jpg?v=1593664244"
-            alt=""
-          />
-          <h2>LET'S GET TO KNOW ME</h2>
-          <p>
-            Hey My name is Sapondanai Sriwan. Currently, I'm studying at
-            Samakkhi witthayakhom school. In my free time I like to work on the
-            small projects in my free time
-          </p>
-          <p>
-            In my free time, I like to watch animes, listen to music and try to
-            build a small projects, and spend time with friends and family.
-          </p>
-        </div>
+    <!----- Navigation bar ----->
+    <section class="nav-links">
+      <nav>
+        <a href="#">Sapondanai Sriwan</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </section>
 
-        <div class="intersting-container">
-          <div>
-            <h2>My Interest</h2>
+    <!----- Home ----->
+    <section id="home">
+      <div class="container-home">
+        <div class="greeting-container">
+          <div class="greeting">
+            <h1>Ayo, I'm Sapondanai Sriwan</h1>
+            <p>
+              I'm just an average high school student who enjoy programming and
+              creating projects that I find interesting.
+            </p>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a
+                    href="https://twitter.com/Adashimaa"
+                    target="_blank"
+                    class="twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/sapondanai.sriwan"
+                    target="_blank"
+                    class="facebook"
+                    ><i class="fa-brands fa-facebook"></i></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/i_am_softt/"
+                    target="_blank"
+                    class="instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/sapondanaisriwan"
+                    target="_blank"
+                    class="github"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:sapondanaisriwan@gmail.com" class="mail"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="interesting-row">
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Anime</h3>
-              </div>
-            </div>
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Music</h3>
-              </div>
-            </div>
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Gaming</h3>
-              </div>
-            </div>
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Manga</h3>
-              </div>
-            </div>
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Light novel</h3>
-              </div>
-            </div>
-            <div class="my-interesting">
-              <div class="contents">
-                <h3>Hentai</h3>
-              </div>
-            </div>
+          <div class="greeting-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/64634605?v=4"
+              alt="profile"
+            />
           </div>
         </div>
-        <div class="card-parent">
-          <h2>Certificates</h2>
-          <div class="certificate-images">
-              <div >
-                <img src="" alt="" data-aos="fade-up">
-              </div>
-          </div>
-
-        </div>
-      </section>
-      <section id="education"></section>
-      <section id="projects"></section>
-      <section id="contact-me"></section>
-      <footer>
-        <div class="footer-credit">
-          <span class="licence">© 2023</span>
-          <span class="dot">•</span>
-          <span class="author">Sapondanai Sriwan</span>
-        </div>
-      </footer>
-    </main>
+      </div>
+    </section>
   </body>
 </html>
