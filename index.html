@@ -6,13 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="shortcut icon" href="/myIcon.ico" />
+
     <!-- import css -->
     <link rel="stylesheet" href="/styles/style.css" />
 
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Dev Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
     <!-- Font awesome -->
     <link
@@ -27,7 +38,7 @@
     <!----- Navigation bar ----->
     <section class="nav-links">
       <nav>
-        <a href="#">Sapondanai Sriwan</a>
+        <a href="#">{ Sapondanai Sriwan }</a>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -38,66 +49,154 @@
       </nav>
     </section>
 
-    <!----- Home ----->
-    <section id="home">
-      <div class="container-home">
-        <div class="greeting-container">
-          <div class="greeting">
-            <h1>Ayo, I'm Sapondanai Sriwan</h1>
-            <p>
-              I'm just an average high school student who enjoy programming and
-              creating projects that I find interesting.
-            </p>
-            <div class="social-media">
-              <ul>
-                <li>
-                  <a
-                    href="https://twitter.com/Adashimaa"
-                    target="_blank"
-                    class="twitter"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/sapondanai.sriwan"
-                    target="_blank"
-                    class="facebook"
-                    ><i class="fa-brands fa-facebook"></i></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/i_am_softt/"
-                    target="_blank"
-                    class="instagram"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/sapondanaisriwan"
-                    target="_blank"
-                    class="github"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="mailto:sapondanaisriwan@gmail.com" class="mail"
-                    ><i class="fa-solid fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
+    <main>
+      <!----- Home ----->
+      <section id="home" class="flex flex-center-xy">
+        <div class="container-home">
+          <div class="greeting-container flex flex-center-xy">
+            <div class="greeting">
+              <h1>Ayo, I'm Sapondanai Sriwan</h1>
+              <p>
+                I'm just an average high school student who enjoy programming
+                and creating projects that I find interesting.
+              </p>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a
+                      href="https://twitter.com/Adashimaa"
+                      target="_blank"
+                      class="twitter avatar flex flex-center-xy"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/sapondanai.sriwan"
+                      target="_blank"
+                      class="facebook avatar flex flex-center-xy"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/i_am_softt/"
+                      target="_blank"
+                      class="instagram avatar flex flex-center-xy"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/sapondanaisriwan"
+                      target="_blank"
+                      class="github avatar flex flex-center-xy"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:sapondanaisriwan@gmail.com"
+                      class="mail avatar flex flex-center-xy"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="greeting-img">
+              <img
+                src="https://avatars.githubusercontent.com/u/64634605?v=4"
+                alt="profile"
+                class="image-fit avatar"
+              />
             </div>
           </div>
-          <div class="greeting-img">
-            <img
-              src="https://avatars.githubusercontent.com/u/64634605?v=4"
-              alt="profile"
-            />
+        </div>
+      </section>
+
+      <!----- About ----->
+      <section id="about">
+        <div class="about-me">
+          <h1>About</h1>
+          <p>
+            Hey! My name is Sapondanai Sriwan. Currently, I'm studying at
+            Samakkhi witthayakhom school.
+          </p>
+          <p>
+            In my free time, I enjoy building small projects, listening to
+            music, watching anime, and hanging out with friends and family.
+          </p>
+        </div>
+
+        <!------ Skills ------>
+        <div class="skills flex flex-center-x">
+          <div class="lanuages">
+            <h2>Languages</h2>
+            <div class="lanuages-group flex flex-center-x flex-wrap">
+              <div class="icon flex flex-center-xy">
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-lua-plain-wordmark colored"></i>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+              officia amet voluptatibus architecto odio sequi alias enim
+              repellendus placeat quo, natus quisquam repellat ipsa dicta! Ex
+              est tempore minima veritatis?
+            </p>
+          </div>
+          <div class="front-end">
+            <h2>Front-End</h2>
+            <div class="front-end-group flex flex-center-x flex-wrap">
+              <div class="icon flex flex-center-xy">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nemo voluptatibus quo dicta aspernatur laudantium rerum sequi
+              molestias pariatur quia delectus, aperiam porro ipsum excepturi
+              architecto in veritatis aliquam aliquid.
+            </p>
+          </div>
+          <div class="back-end">
+            <h2>Back-End</h2>
+            <div class="back-end-group flex flex-center-x flex-wrap">
+              <div class="icon flex flex-center-xy">
+                <i class="fa-brands fa-node"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                <i class="devicon-express-original-wordmark colored"></i>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              molestiae eum, suscipit, facere amet provident, vitae ipsa earum
+              cupiditate unde nam repellat ea in minus similique qui tempore
+              quisquam consectetur.
+            </p>
+          </div>
+          <div class="tools">
+            <h2>Tools</h2>
+            <div class="tools-group flex flex-center-x flex-wrap">
+              <div class="icon flex flex-center-xy">
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-github-original-wordmark"></i>
+                <i class="devicon-firebase-plain-wordmark colored"></i>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              temporibus dolorum, natus, a suscipit odio esse dolorem facere
+              nobis nemo illo aliquid, eum cumque eveniet exercitationem
+              doloremque deleniti voluptatibus repellendus.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
