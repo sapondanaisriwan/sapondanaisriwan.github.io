@@ -363,7 +363,6 @@ a.mail {
 /* Education */
 #education {
   margin-top: 10rem;
-  height: 100vh;
 }
 
 #education h1 {
@@ -449,4 +448,84 @@ a.mail {
   background-color: var(--bg-d);
   width: 40px;
   height: 40px;
+}
+
+/* Projects */
+#projects {
+  height: 100vh;
+  margin-top: 10rem;
+}
+
+#projects h1 {
+  color: var(--text-d);
+  font-size: 4rem;
+}
+
+.project-lists {
+  gap: 2rem;
+}
+
+.project-section-list-renderer {
+  background-color: var(--bg-d);
+  border-color: 0.1rem solid var(--border-a);
+  border-radius: 1rem;
+  flex-basis: calc(100% / 3 - 2rem);
+}
+
+.project-details {
+  padding: 2.4rem;
+}
+
+.project-details > i {
+  font-size: 2.4rem;
+  padding-right: 1rem;
+  color: #8b949e;
+}
+
+.project-details > a {
+  color: #58a6ff;
+  font-size: 2.4rem;
+}
+
+.project-details > a:hover {
+  text-decoration: underline;
+}
+
+.project-details p {
+  font-size: 1.8rem;
+  color: #8b949e;
+}
+
+.project-bottom-details {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.project-bottom-details * {
+  color: #8b949e;
+}
+
+.project-thunbnail picture {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.project-thunbnail img {
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  object-position: center top;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-bottom-details svg {
+  height: 16px;
+  width: 16px;
+}
+
+.icon-python {
+  gap: 0.6rem;
 }
