@@ -8,7 +8,6 @@ var splide = new Splide(".splide", {
   perPage: 3,
   perMove: 1,
   autoplay: true,
-  wheel: true,
   breakpoints: {
     640: {
       perPage: 2,

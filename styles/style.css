@@ -7,12 +7,15 @@
 :root {
   --text-a: #fff;
   --text-b: #f5f5f5;
-  --text-c: #aaa;
+  --text-c: #d4d4d8;
   --text-d: #18d26e;
   --bg-nav: #202020;
   --bg-a: #161625;
   --bg-b: #f5f5f5;
   --bg-c: #27272a;
+  --bg-d: rgb(36, 36, 36);
+
+  --border-a: #3a3f42;
 }
 
 html {
@@ -28,6 +31,30 @@ body {
 
 a {
   text-decoration: none;
+}
+
+hr {
+  background-color: var(--border-a);
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+  height: 0.05rem;
+  border: 0;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
 }
 
 /* Global Class */
@@ -72,10 +99,6 @@ a {
   color: var(--text-a);
 }
 
-.nav-links nav > a {
-  font-family: "Pacifico", cursive;
-}
-
 .nav-links nav {
   display: flex;
   justify-content: space-between;
@@ -83,7 +106,16 @@ a {
 
   font-size: 2rem;
   padding: 2rem 4rem;
+  border-bottom: 0.1rem solid var(--border-a);
   background-color: var(--bg-nav);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-links nav > a {
+  font-family: "Pacifico", cursive;
 }
 
 .nav-links nav ul li {
@@ -97,12 +129,16 @@ a {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #7ec8e3;
+  background-color: var(--text-d);
   transition: 0.5s;
 }
 
 .nav-links nav ul li a:hover::after {
   width: 100%;
+}
+
+p {
+  color: var(--text-c);
 }
 
 /* Main */
@@ -134,15 +170,49 @@ main {
   font-weight: 700;
 }
 
-.greeting h1 span {
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.greeting h1 span:last-child {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to right, #f472b6, #38bdf8);
 }
 
-.greeting h2 {
+.greeting p {
   margin-top: 2rem;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 /* ----- Social media ----- */
@@ -207,15 +277,18 @@ a.mail {
   font-size: 2rem;
 }
 
+#my-skills {
+  margin-top: 6rem;
+}
+
 /* ----- Skills ----- */
 #my-skills h2 {
   text-align: center;
   font-size: 3.2rem;
-  margin-top: 3rem;
 }
 
 .skills {
-  margin-top: 1rem;
+  margin-top: 4rem;
   gap: 2rem;
 }
 
@@ -266,7 +339,7 @@ a.mail {
 
 /* My Certificates */
 #my-certificates {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 #my-certificates h2 {
@@ -274,14 +347,22 @@ a.mail {
   text-align: center;
 }
 
+/* Image slider */
+.splide {
+  margin-top: 4rem;
+}
+
 [role="tablist"] {
   bottom: -3rem !important;
+}
+
+.splide__arrow {
+  font-size: 1.8rem;
 }
 
 /* Education */
 #education {
   margin-top: 10rem;
-  margin-bottom: 10rem;
   height: 100vh;
 }
 
@@ -303,7 +384,7 @@ a.mail {
   content: "";
   height: 30px;
   width: 30px;
-  background: #fff;
+  background-color: var(--bg-d);
   left: -25px;
   top: 25px;
   z-index: -1;
@@ -315,7 +396,7 @@ a.mail {
   content: "";
   height: 30px;
   width: 30px;
-  background: #fff;
+  background-color: var(--bg-d);
   right: -25px;
   top: 25px;
   z-index: -1;
@@ -325,7 +406,7 @@ a.mail {
 .center-line {
   height: 100%;
   width: 3px;
-  background-color: #fff;
+  background-color: var(--bg-d);
 
   position: absolute;
   top: 20px;
@@ -338,7 +419,7 @@ a.mail {
   height: 35px;
   font-size: 2rem;
   color: #fff;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--bg-d);
 
   position: absolute;
   bottom: 0;
@@ -358,14 +439,14 @@ a.mail {
   width: calc(50% - 5rem);
   border-radius: 1rem;
   padding: 2rem;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--bg-d);
 }
 
 .timeline-container i {
   font-size: 2.4rem;
   position: absolute;
   left: calc(50% - 2rem);
-  background-color: rgb(36, 36, 36);
+  background-color: var(--bg-d);
   width: 40px;
   height: 40px;
 }
