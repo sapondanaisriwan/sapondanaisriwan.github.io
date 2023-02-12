@@ -33,6 +33,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- splide framework -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="/js/image-slider.js" defer></script>
   </head>
   <body>
     <!----- Navigation bar ----->
@@ -203,7 +212,75 @@
         <!----- Certificates ----->
         <div id="my-certificates">
           <h2>My Certificates</h2>
-          <div class="certificate-container"></div>
+          <section class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate1.jpg"
+                    alt="cer1"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate2.jpg"
+                    alt="cer2"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate3.jpg"
+                    alt="cer3"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate4.jpg"
+                    alt="cer4"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate5.jpg"
+                    alt="cer5"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate6.jpg"
+                    alt="cer6"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate7.jpg"
+                    alt="cer7"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate8.jpg"
+                    alt="cer8"
+                    class="image-fit2"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/certificate/certificate9.jpg"
+                    alt="cer9"
+                    class="image-fit2"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </section>
       <section id="education">
@@ -213,7 +290,9 @@
             <div>
               <div class="center-line">
                 <a href="#education">
-                  <i class="fa-solid fa-circle-chevron-up avatar flex flex-center-xy"></i>
+                  <i
+                    class="fa-solid fa-circle-chevron-up avatar flex flex-center-xy"
+                  ></i>
                 </a>
               </div>
               <div id="kindergarten" class="timeline-left flex">

@@ -62,6 +62,11 @@ a {
   height: 100%;
   object-fit: contain;
 }
+.image-fit2 {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
 
 .nav-links a {
   color: var(--text-a);
@@ -269,6 +274,10 @@ a.mail {
   text-align: center;
 }
 
+[role="tablist"] {
+  bottom: -3rem !important;
+}
+
 /* Education */
 #education {
   margin-top: 10rem;
@@ -328,7 +337,7 @@ a.mail {
   width: 35px;
   height: 35px;
   font-size: 2rem;
-  color: #Fff;
+  color: #fff;
   background-color: rgb(36, 36, 36);
 
   position: absolute;
