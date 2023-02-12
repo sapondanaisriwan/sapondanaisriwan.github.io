@@ -389,7 +389,11 @@ a.mail {
 
 .school {
   position: relative;
-  height: auto;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 980px;
 }
 
 .timeline-left::after {
