@@ -487,7 +487,8 @@ a.mail {
   background-color: var(--bg-d);
   border-color: 0.1rem solid var(--border-a);
   border-radius: 1rem;
-  flex-basis: calc(100% / 3 - 2rem);
+  width: calc(33% - 1rem);
+  flex: 1 1 35rem;
 }
 
 .project-details {
