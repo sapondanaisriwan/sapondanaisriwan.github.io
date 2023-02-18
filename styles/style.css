@@ -124,10 +124,51 @@ p {
   font-family: "Pacifico", cursive;
 }
 
+.toggle-btn {
+  display: none;
+}
+
 .nav-links nav ul li {
   list-style: none;
   display: inline-block;
   padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+
+  nav {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    right: 4rem;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+}
+
+.nav-links nav ul li a:hover {
+  transition: 0.5s;
+  color: var(--text-d);
 }
 
 .nav-links nav ul li a::after {
@@ -159,15 +200,9 @@ main {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 900px) {
   main {
-    max-width: 74rem;
-  }
-}
-
-@media screen and (min-width: 888px) {
-  main {
-    max-width: 84rem;
+    max-width: 86rem;
   }
 }
 
@@ -176,18 +211,6 @@ main {
     max-width: 124rem;
   }
 }
-
-/* @media screen and (min-width: 1440px) {
-  main {
-    max-width: 140rem;
-  }
-} */
-
-/* @media screen and (min-width: 1680px) {
-  main {
-    max-width: 164rem;
-  }
-} */
 
 @media screen and (min-width: 1920px) {
   main {
@@ -208,14 +231,14 @@ main {
 
 .container-home {
   display: flex;
-} 
+}
 
-@media (max-width: 888px) {
+@media (max-width: 900px) {
   .greeting-container {
     flex-direction: column-reverse;
   }
   .greeting-img {
-    width: 70%;
+    width: 60%;
   }
 }
 
