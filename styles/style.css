@@ -155,13 +155,19 @@ main {
 
 @media screen and (min-width: 512px) {
   main {
-    max-width: 48rem;
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  main {
+    max-width: 74rem;
   }
 }
 
 @media screen and (min-width: 888px) {
   main {
-    max-width: 80rem;
+    max-width: 84rem;
   }
 }
 
@@ -171,17 +177,17 @@ main {
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   main {
     max-width: 140rem;
   }
-}
+} */
 
-@media screen and (min-width: 1680px) {
+/* @media screen and (min-width: 1680px) {
   main {
     max-width: 164rem;
   }
-}
+} */
 
 @media screen and (min-width: 1920px) {
   main {
@@ -198,26 +204,29 @@ main {
 /* ----- Home ----- */
 #home {
   height: 100vh;
-  /* blur */
-  /* -webkit-backdrop-filter: blur(1.6rem);
-  backdrop-filter: blur(1.6rem);
-  background: linear-gradient(
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.486) 85%,
-        rgb(0, 0, 0) 100%
-      )
-      right center / cover fixed,
-    url("https://images.alphacoders.com/110/1101639.jpg"); */
 }
 
 .container-home {
   display: flex;
 }
 
+.greeting {
+  max-width: 70%;
+}
+
 .greeting-container {
   gap: 5rem;
   flex: 1;
+  /* flex-wrap: wrap; */
 }
+
+/* @media (min-width: 1280px) {
+  .greeting-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+} */
 
 .greeting {
   padding: 2rem;
@@ -350,11 +359,17 @@ a.mail {
   gap: 2rem;
 }
 
+@media (max-width: 1280px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+
 .lanuages,
 .front-end,
 .back-end,
 .tools {
-  max-width: calc(100% / 4 - 1rem);
+  width: 100%;
 }
 
 .lanuages h3,
@@ -523,11 +538,47 @@ a.mail {
   font-size: 4rem;
 }
 
-.project-lists {
+.projects-container {
   display: grid;
+  grid-template-rows: auto auto;
   /* gap: 1.6rem; */
   margin-right: -0.8rem;
   margin-left: -0.8rem;
+}
+
+@media (min-width: 512px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 780px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 888px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .projects-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1680px) {
+  .projects-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .projects-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .project-section-list-renderer {
@@ -536,33 +587,7 @@ a.mail {
   border-radius: 1rem;
 
   margin: 0 0.8rem 1.6rem 0.8rem;
-  /* min-width: 30rem; */
-  flex: 1 0 40rem;
 }
-
-/* @media screen and (max-width: 54rem) {
-  .project-section-list-renderer {
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (max-width: 64.8rem) {
-  .project-section-list-renderer {
-    flex-basis: calc(100% / 2 - 1.6rem);
-  }
-}
-
-@media screen and (max-width: 96.4rem) {
-  .project-section-list-renderer {
-    flex-basis: calc(100% / 3 - 1.6rem);
-  }
-}
-
-@media screen and (max-width: 128rem) {
-  .project-section-list-renderer {
-    flex-basis: calc(100% / 4 - 1.6rem);
-  }
-} */
 
 .project-details {
   padding: 2.4rem;
