@@ -208,25 +208,16 @@ main {
 
 .container-home {
   display: flex;
-}
+} 
 
-.greeting {
-  max-width: 70%;
-}
-
-.greeting-container {
-  gap: 5rem;
-  flex: 1;
-  /* flex-wrap: wrap; */
-}
-
-/* @media (min-width: 1280px) {
+@media (max-width: 888px) {
   .greeting-container {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-} */
+  .greeting-img {
+    width: 70%;
+  }
+}
 
 .greeting {
   padding: 2rem;
