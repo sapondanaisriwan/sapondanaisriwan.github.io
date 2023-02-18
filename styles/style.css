@@ -16,6 +16,8 @@
   --bg-d: rgb(36, 36, 36);
 
   --border-a: #3a3f42;
+
+  --projects-per-row: 4;
 }
 
 html {
@@ -147,8 +149,50 @@ p {
 
 /* Main */
 main {
-  width: 90%;
+  padding: 0 1.6rem;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 512px) {
+  main {
+    max-width: 48rem;
+  }
+}
+
+@media screen and (min-width: 888px) {
+  main {
+    max-width: 80rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    max-width: 124rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 140rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  main {
+    max-width: 164rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main {
+    max-width: 164rem;
+  }
+}
+
+@media screen and (min-width: 2318px) {
+  main {
+    max-width: 204.6rem;
+  }
 }
 
 /* ----- Home ----- */
@@ -480,16 +524,45 @@ a.mail {
 }
 
 .project-lists {
-  gap: 2rem;
+  display: grid;
+  /* gap: 1.6rem; */
+  margin-right: -0.8rem;
+  margin-left: -0.8rem;
 }
 
 .project-section-list-renderer {
   background-color: var(--bg-d);
   border-color: 0.1rem solid var(--border-a);
   border-radius: 1rem;
-  width: calc(33% - 1rem);
-  flex: 1 1 35rem;
+
+  margin: 0 0.8rem 1.6rem 0.8rem;
+  /* min-width: 30rem; */
+  flex: 1 0 40rem;
 }
+
+/* @media screen and (max-width: 54rem) {
+  .project-section-list-renderer {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 64.8rem) {
+  .project-section-list-renderer {
+    flex-basis: calc(100% / 2 - 1.6rem);
+  }
+}
+
+@media screen and (max-width: 96.4rem) {
+  .project-section-list-renderer {
+    flex-basis: calc(100% / 3 - 1.6rem);
+  }
+}
+
+@media screen and (max-width: 128rem) {
+  .project-section-list-renderer {
+    flex-basis: calc(100% / 4 - 1.6rem);
+  }
+} */
 
 .project-details {
   padding: 2.4rem;
