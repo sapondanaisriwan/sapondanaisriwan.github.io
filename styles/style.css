@@ -540,45 +540,9 @@ a.mail {
 
 .projects-container {
   display: grid;
-  grid-template-rows: auto auto;
-  /* gap: 1.6rem; */
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   margin-right: -0.8rem;
   margin-left: -0.8rem;
-}
-
-@media (min-width: 512px) {
-  .projects-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 780px) {
-  .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 888px) {
-  .projects-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1280px) {
-  .projects-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1680px) {
-  .projects-container {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (min-width: 1920px) {
-  .projects-container {
-    grid-template-columns: repeat(6, 1fr);
-  }
 }
 
 .project-section-list-renderer {
