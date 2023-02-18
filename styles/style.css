@@ -106,7 +106,7 @@ p {
   align-items: center;
 
   font-size: 2rem;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   border-bottom: 0.1rem solid var(--border-a);
   background-color: var(--bg-nav);
   position: fixed;
@@ -575,9 +575,10 @@ a.mail {
 
 @media screen and (max-width: 900px) {
   .center-line {
-    left: 0;
+    left: 2rem;
   }
 
+  .timeline-right .timeline-container i,
   .timeline-left .timeline-container i {
     left: -7rem;
   }
@@ -590,16 +591,11 @@ a.mail {
     width: 100%;
   }
   
+  .timeline-right,
   .timeline-left {
-    margin-left: 5rem;
+    margin-left: 7rem;
     margin-bottom: 3rem;
   }
-  
-  .timeline-right {
-    margin-left: 5rem;
-    margin-bottom: 3rem;
-  }
-
 }
 
 /* Projects */
