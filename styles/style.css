@@ -16,14 +16,13 @@
   --bg-d: rgb(36, 36, 36);
 
   --border-a: #3a3f42;
-
-  --projects-per-row: 4;
 }
 
 html {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
 }
 
 body {
@@ -113,7 +112,7 @@ p {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-links nav * {
@@ -135,11 +134,10 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-
   nav {
     height: auto;
-    display: flex;
     flex-direction: column;
+    padding: 1rem 3rem !important;
   }
 
   nav ul {
@@ -166,22 +164,24 @@ p {
   }
 }
 
-.nav-links nav ul li a:hover {
-  transition: 0.5s;
-  color: var(--text-d);
-}
+@media screen and (min-width: 900px) {
+  .nav-links nav ul li a:hover {
+    transition: 0.5s;
+    color: var(--text-d);
+  }
 
-.nav-links nav ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: var(--text-d);
-  transition: 0.5s;
-}
+  .nav-links nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-d);
+    transition: 0.5s;
+  }
 
-.nav-links nav ul li a:hover::after {
-  width: 100%;
+  .nav-links nav ul li a:hover::after {
+    width: 100%;
+  }
 }
 
 p {
@@ -197,6 +197,12 @@ main {
 @media screen and (min-width: 512px) {
   main {
     max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 72rem;
   }
 }
 
@@ -233,12 +239,16 @@ main {
   display: flex;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
+  .container-home {
+    margin-top: 15rem;
+  }
+
   .greeting-container {
     flex-direction: column-reverse;
   }
   .greeting-img {
-    width: 60%;
+    width: 40%;
   }
 }
 
@@ -456,8 +466,27 @@ a.mail {
   font-size: 4rem;
   color: var(--text-d);
 }
-#education h1 i {
-  font-size: 4rem;
+
+#education h2 {
+  font-size: 2rem;
+  color: var(--text-d);
+}
+
+#education p {
+  font-size: 1.6rem;
+}
+
+#education h2 i {
+  font-size: 2rem;
+}
+
+.detail img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.detail-plus {
+  margin-left: 1rem;
 }
 
 .school {
@@ -466,31 +495,7 @@ a.mail {
 
 .timeline {
   margin: 0 auto;
-  max-width: 980px;
-}
-
-.timeline-left::after {
-  position: relative;
-  content: "";
-  height: 30px;
-  width: 30px;
-  background-color: var(--bg-d);
-  left: -25px;
-  top: 25px;
-  z-index: -1;
-  transform: rotate(45deg);
-}
-
-.timeline-right::before {
-  position: relative;
-  content: "";
-  height: 30px;
-  width: 30px;
-  background-color: var(--bg-d);
-  right: -25px;
-  top: 25px;
-  z-index: -1;
-  transform: rotate(45deg);
+  max-width: 1080px;
 }
 
 .center-line {
@@ -530,15 +535,71 @@ a.mail {
   border-radius: 1rem;
   padding: 2rem;
   background-color: var(--bg-d);
+  position: relative;
+}
+
+.timeline-container::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: var(--bg-d);
+  top: 25px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.timeline-left .timeline-container::before {
+  right: -7px;
+}
+
+.timeline-right .timeline-container::before {
+  left: -7px;
 }
 
 .timeline-container i {
   font-size: 2.4rem;
   position: absolute;
-  left: calc(50% - 2rem);
   background-color: var(--bg-d);
   width: 40px;
   height: 40px;
+}
+
+.timeline-left .timeline-container i {
+  left: calc(100% + 3rem);
+}
+
+.timeline-right .timeline-container i {
+  right: calc(100% + 3rem);
+}
+
+@media screen and (max-width: 900px) {
+  .center-line {
+    left: 0;
+  }
+
+  .timeline-left .timeline-container i {
+    left: -7rem;
+  }
+
+  .timeline-left .timeline-container::before {
+    left: -0.8rem;
+  }
+
+  .timeline-container {
+    width: 100%;
+  }
+  
+  .timeline-left {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-right {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
 }
 
 /* Projects */
@@ -572,14 +633,14 @@ a.mail {
 }
 
 .project-details > i {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   padding-right: 1rem;
   color: #8b949e;
 }
 
 .project-details > a {
   color: #58a6ff;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .project-details > a:hover {
@@ -589,6 +650,13 @@ a.mail {
 .project-details p {
   font-size: 1.8rem;
   color: #8b949e;
+
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-bottom-details {
