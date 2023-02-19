@@ -10,6 +10,7 @@
   --text-c: #d4d4d8;
   --text-d: #18d26e;
   --bg-nav: #202020;
+  --bg-nav2: rgb(32, 32, 32);
   --bg-a: #161625;
   --bg-b: #f5f5f5;
   --bg-c: #27272a;
@@ -28,6 +29,109 @@ html {
 body {
   color: var(--text-a);
   background-color: var(--bg-a);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.486) 85%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("/images/wallpaper/adashi-and-shimamura.jpeg") no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(0.3rem);
+}
+
+#ads {
+  height: 100vh;
+  margin-top: 25rem;
+  position: relative;
+}
+
+.wallpaper1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.486) 85%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("/images/wallpaper/adashi-and-shimamura2.jpeg")
+      no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(0.3rem);
+}
+
+.wallpaper2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.486) 85%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("https://user-images.githubusercontent.com/64634605/219935706-ab5f3596-b74b-43e1-8442-0163a2d62a28.png")
+      no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(0.3rem);
+}
+
+.custom-shape-divider-top-1676791637 {
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1676791637 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3rem);
+  height: 249px;
+}
+
+.custom-shape-divider-top-1676791637 .shape-fill {
+  fill: var(--bg-a);
+}
+
+.custom-shape-divider-bottom-1676792117 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676792117 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 272px;
+}
+
+.custom-shape-divider-bottom-1676792117 .shape-fill {
+  fill: var(--bg-a);
 }
 
 a {
@@ -108,7 +212,7 @@ p {
   font-size: 2rem;
   padding: 1.5rem 4rem;
   border-bottom: 0.1rem solid var(--border-a);
-  background-color: var(--bg-nav);
+  background-color: rgba(32, 32, 32, 0.9);
   position: fixed;
   width: 100%;
   top: 0;
@@ -189,43 +293,64 @@ p {
 }
 
 /* Main */
-main {
+#home,
+#about,
+#education,
+#projects {
   padding: 0 1.6rem;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 512px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 50rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 72rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 86rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 124rem;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 164rem;
   }
 }
 
 @media screen and (min-width: 2318px) {
-  main {
+  #home,
+  #about,
+  #education,
+  #projects {
     max-width: 204.6rem;
   }
 }
@@ -601,7 +726,7 @@ a.mail {
   .timeline-container {
     width: 100%;
   }
-  
+
   .timeline-right,
   .timeline-left {
     margin-left: 7rem;
