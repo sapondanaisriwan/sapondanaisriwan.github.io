@@ -95,7 +95,7 @@ body::before {
 
 .custom-shape-divider-top-1676791637 {
   position: absolute;
-  top: -0.6rem;
+  top: -0.8rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -115,7 +115,7 @@ body::before {
 
 .custom-shape-divider-bottom-1676792117 {
   position: absolute;
-  bottom: 0;
+  bottom: -0.8rem;
   left: 0;
   width: 100%;
   overflow: hidden;
