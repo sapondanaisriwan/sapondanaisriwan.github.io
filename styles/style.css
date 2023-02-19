@@ -480,6 +480,17 @@ a.mail {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 512px) {
+  #education h2 {
+    font-size: 1.6rem;
+    color: var(--text-d);
+  }
+
+  #education p {
+    font-size: 1.2rem;
+  }
+}
+
 .detail img {
   width: 10rem;
   height: 10rem;
