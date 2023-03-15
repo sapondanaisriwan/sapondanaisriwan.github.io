@@ -1,0 +1,10 @@
+ytd-video-renderer,
+ytd-rich-item-renderer,
+ytd-grid-video-renderer,
+ytd-compact-video-renderer {
+    for num in (watchPercentage..100) {
+        &:not(is-history):has(#progress.ytd-thumbnail-overlay-resume-playback-renderer[style$='{num}\%\;']) {
+            display: none if num >= watchPercentage;
+        }
+    }
+}
