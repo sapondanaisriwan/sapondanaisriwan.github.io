@@ -7,11 +7,59 @@
   background: url(../images/wallpaper/natural.webp) no-repeat center/cover;
 }
 
-#grass {
+/* #grass {
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+} */
+
+#grass {
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+#grass:before,
+#grass:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  border-radius: 12px;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#grass:after {
+  filter: blur(8px);
 }
