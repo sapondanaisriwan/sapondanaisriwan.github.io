@@ -65,27 +65,29 @@
   filter: blur(8px);
 }
 
-#perspective {
-  transform-origin: center center 0px;
-  transition: all 0.5s ease-out;
-  animation-name: animate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform: perspective(1000px) rotateX(45deg) rotateY(4deg) rotateZ(-30deg);
-}
-
-#perspective:hover {
-  transform: rotateX(0) rotateY(0) rotateZ(0);
-}
-
-@keyframes animate {
-  0% {
-    margin-top: 20vh;
+@media only screen and (min-width: 1024px) {
+  #perspective {
+    transform-origin: center center 0px;
+    transition: all 0.5s ease-out;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: perspective(1000px) rotateX(45deg) rotateY(4deg) rotateZ(-30deg);
   }
-  50% {
-    margin-top: 18vh;
+
+  #perspective:hover {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
   }
-  100% {
-    margin-top: 20vh;
+
+  @keyframes animate {
+    0% {
+      margin-top: 20vh;
+    }
+    50% {
+      margin-top: 18vh;
+    }
+    100% {
+      margin-top: 20vh;
+    }
   }
 }
